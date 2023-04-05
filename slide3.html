@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slide3.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+
+
+    <div class="text-center">
+        <audio auto src="audios/newq1.mp3" autoplay type="audio/mp3"></audio>
+        <div class="row">
+            <div class="columns small-12"></div>
+            <div id="application_wrapper">
+                <div id="application">
+                    <header id="top_band">
+                        <div class="topRow">
+                            <div class="top-left-wrapper">
+                                <div id="logo-desktop" class="logo header-icon">
+                                </div>
+                                <!-- <button></button> -->
+                                <a href="index.html"> <button id="btn_home" class="tis-btn"><i
+                                            class="fa-solid fa-house homes-btn"></i></button></a>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" col-lg-3 col-md-4 col-12 my-3>
+        <div class="row mx-auto text-center">
+            <div class="head-of-head  mt-5 row" id="header">
+                <div class="row ml-4 header-pic">
+                    <div class="big-img">
+
+                        <span class="q-1">आइए, इस कथन को पढ़ें और सही विकल्प चुनें।</span>
+                        <img src="images/bg.png" alt="space-big" class="img-1" />
+
+                    </div>
+                    <div class="man-with-book">
+                        <img class="man-book" src="images/Avatar-01.png" alt="man-with-book" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+
+
+            <div class="rectangle" id="rectangle">
+                <div class="ques-div">
+                    <div id="para-div" class="ques" onload="quesionload()">
+                        <p id="para" class="animate__animated animate__slower animate__bounceIn animate__animated">1.
+                            अगर आपको कोई ऐसा लिंक भेजे और कहे की इसमें आपके यूपीआई पिन डालने पर आपको पुरस्कार या
+                            रिवार्ड्स मिलेंगे, और यह लिंक किसी जानी मानी कंपनी की तरफ से भेजा गया है। तो क्या उसमें
+                            यूपीआई पिन डालना सुरक्षित है?</p>
+                    </div>
+
+                </div>
+
+
+                <ul>
+                    <li id="right" class="right">
+                        <div class="animate__animated animate__slower animate__bounceIn animate__animated">
+                            <input type="radio" name="answer" id="ans1" class="answer" onclick="play()" />
+                            <audio id="true-audio" src="audios/true.mp3"></audio>
+                            <label for="ans1" id="option1" class="option-right-wrong">सही<span class="span-1"><img
+                                        class="tick" src="images/tick.png" id="right-img" /></span>
+                            </label>
+                        </div>
+                    </li>
+                    <li class="animate__animated animate__slower animate__bounceIn animate__animated">
+                        <!-- <span class="span-gif"><img src="images/gif.gif" class="giff" id="gif" /></span> -->
+                        <div class="wrong " id="wrong">
+                            <input type="radio" name="answer" id="ans2" class="answer" onclick="playwrong()" />
+                            <audio id="wrong-audio" src="audios/false.mp3"></audio>
+                            <label for="ans1" id="option1" class="option-right-wrong">गलत<span><img class="wrong-1"
+                                        src="images/cross.png" id="wrong-img" /></span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="last-p">
+        <!-- <a href="index.html"><button class="btn-start "></button></a> -->
+        <p class="para" id="my-para"><strong>सही जवाब</strong>:पुरस्कार देने के लिए किसी कंपनी या व्यक्ति को आपके यूपीआई
+            पिन की<br> ज़रूरत नहीं होगी। यू पीआई पिन सिर्फ पैसों के लेन-देन के लिए होता है।<br> इसलिए, इसे कभी किसी को न
+            दें।
+        </p>
+        <p class="para-wrongs" id="my-para-wrong"><strong>गलत जवाब</strong>:पुरस्कार देने के लिए किसी कंपनी या व्यक्ति
+            को आपके यूपीआई पिन <br>की ज़रूरत नहीं होगी। यू पीआई पिन सिर्फ पैसों के लेन-देन के लिए होता है।<br> इसलिए, इसे
+            कभी
+            किसी को न दें।
+        </p>
+
+    </div>
+    <div class="allbtn" id="allbtn">
+
+        <!-- back btn -->
+        <a href="slide2.html"><img src="images/back.png" class="back-btn"></a>
+
+        <!-- nextbtn -->
+        <div>
+            <a href="slide4.html"><button class="button_next">जारी रखें<i class="fa-solid fa-caret-right rightabc"
+                        style="color: #ffffff;"></i></button></a>
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="bottom_band" class="bottom_band">
+            <div id="navigation_band">
+                <div class="curve-parentContainer">
+                    <div class="curved BG-pink">
+                        <div class="shareiconpanel">
+                            <span class="copyright-text">copyright Action 2021. All right reserved</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+        function play() {
+            const audio = document.getElementById("true-audio");
+
+            audio.play();
+            setTimeout(() => {
+                btnend.classList.remove('button_next')
+
+                btnend.classList.add('btn-end-animation')
+                // btnend.idList.remove('button_next')
+                // document.getElementById('button_next').remove()
+            }, 18000)
+
+
+
+        }
+
+        function playwrong() {
+            const audios = document.getElementById("wrong-audio");
+            audios.play();
+            setTimeout(() => {
+                btnend.classList.remove('button_next')
+
+                btnend.classList.add('btn-end-animation')
+            }, 17000)
+        }</script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
